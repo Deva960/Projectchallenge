@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Even and Odd Numbers</title>
+</head>
+<body>
+    <h2>Even and Odd Numbers Between 50 to 100</h2>
+    <button onclick="countEvenOdd()">Count Even and Odd Numbers</button>
+    <p id="evenOddCount"></p>
+
+    <script>
+        function countEvenOdd() {
+            let evenCount = 0;
+            let oddCount = 0;
+            for (let i = 50; i <= 100; i++) {
+                if (i % 2 === 0) {
+                    evenCount++;
+                } else {
+                    oddCount++;
+                }
+            }
+            document.getElementById('evenOddCount').innerText = `Even numbers: ${evenCount}, Odd numbers: ${oddCount}`;
+        }
+    </script>
+</body>
+</html>

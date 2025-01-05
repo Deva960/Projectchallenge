@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum of Digits</title>
+</head>
+<body>
+    <h2>Sum of Digits</h2>
+    <input type="number" id="sumDigitsInput" placeholder="Enter a number">
+    <button onclick="sumOfDigits()">Calculate Sum</button>
+    <p id="sumDigitsResult"></p>
+
+    <script>
+        function sumOfDigits() {
+            const number = document.getElementById('sumDigitsInput').value;
+            let sum = 0;
+            for (let digit of number) {
+                sum += parseInt(digit);
+            }
+            document.getElementById('sumDigitsResult').innerText = `Sum of digits: ${sum}`;
+        }
+    </script>
+</body>
+</html>

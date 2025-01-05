@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number to Words</title>
+</head>
+<body>
+    <h2>Number to Words</h2>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="numberToWords()">Convert</button>
+    <p id="numberWords"></p>
+
+    <script>
+        function numberToWords() {
+            const number = document.getElementById('numberInput').value;
+            const words = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+            const result = number.split('').map(digit => words[digit]).join(' ');
+            document.getElementById('numberWords').innerText = result;
+        }
+    </script>
+</body>
+</html>

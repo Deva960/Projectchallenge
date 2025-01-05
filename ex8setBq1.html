@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Numbers</title>
+</head>
+<body>
+    <h2>Prime Numbers Between 1 to 89</h2>
+    <button onclick="printPrimeNumbers()">Print Prime Numbers</button>
+    <p id="primeNumbers"></p>
+
+    <script>
+        function isPrime(num) {
+            if (num <= 1) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+
+        function printPrimeNumbers() {
+            let primes = [];
+            for (let i = 2; i <= 89; i++) {
+                if (isPrime(i)) {
+                    primes.push(i);
+                }
+            }
+            document.getElementById('primeNumbers').innerText = primes.join(', ');
+        }
+    </script>
+</body>
+</html>

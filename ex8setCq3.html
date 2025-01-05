@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <h2>Fibonacci Series</h2>
+    <input type="number" id="fibonacciInput" placeholder="Enter number of terms">
+    <button onclick="printFibonacci()">Generate Series</button>
+    <p id="fibonacciResult"></p>
+
+    <script>
+        function printFibonacci() {
+            const terms = parseInt(document.getElementById('fibonacciInput').value);
+            let n1 = 0, n2 = 1, nextTerm;
+            let series = [n1, n2];
+            for (let i = 2; i < terms; i++) {
+                nextTerm = n1 + n2;
+                series.push(nextTerm);
+                n1 = n2;
+                n2 = nextTerm;
+            }
+            document.getElementById('fibonacciResult').innerText = `Fibonacci Series: ${series.join(', ')}`;
+        }
+    </script>
+</body>
+</html>

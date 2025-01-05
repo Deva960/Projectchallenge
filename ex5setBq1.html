@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .div{
+      width: 500px;
+      height: 350px;
+      background-color: white;
+      position: absolute;
+      top: 0%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .button{
+      font-size: normal;
+    }
+    .hr-text{
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .hr-text::before,.hr-text::after{
+      content: '';
+      flex: 1;
+      border-bottom: #3da2c3;
+    }
+    .hr-text::before{
+      margin-left: 10px;
+    }
+    .hr-text::after{
+      margin-left: 10px;
+    }
+  </style>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color: aquamarine;border-radius: 10px;">
+  <div class="div" style="padding-left: 20px;">
+    <h2>
+      Team Meeting <button class="button" style="background-color: red;font-size: initial;border-radius: 5px; color: white;border-color: red;">Checklist</button>
+    </h2>
+    <div style="font-family: Georgia, 'Times New Roman', Times, serif;">04/01/2020 ML - 1321</div>
+    <br>
+    <br>
+    <input type="checkbox" id="1"><label for="1" style="padding-left: 10px;font-size: large;"><strike>Task list and assignments</strike></label><br>
+    <input type="checkbox" id="2"><label for="2" style="padding-left: 10px;font-size: large;">Set due date and assignments</label><br>
+    <input type="checkbox" id="3"><label for="3" style="padding-left: 10px;font-size: large;">Remove duplicate tasks and stories</label><br>
+    <input type="checkbox" id="4"><label for="4" style="padding-left: 10px;font-size: large;">Updates the userflow and stories</label><br>
+    <input type="checkbox" id="5"><label for="5" style="padding-left: 10px;font-size: large;">Adjust the components</label><br>
+    <br><div class="hr-text">Shared with</div>
+
+                <style>
+                    img{
+                        clip-path: circle(50% at 50% 50%);
+                    }
+                </style>
+                <center>
+                     <class="list-group-item border-0 d-flex align-items-center p-0">
+                     <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-8.webp" alt="avatar" class="rounded-circle me-n2" width="45">
+                
+                     <class="list-group-item border-0 d-flex align-items-center p-0">
+                     <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-3.webp" alt="avatar" class="rounded-circle me-n2" width="45">
+                
+                     <class="list-group-item border-0 d-flex align-items-center p-0">
+                     <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp" alt="avatar" class="rounded-circle me-n2" width="45">
+                
+                     <class="list-group-item border-0 d-flex align-items-center p-0">
+                     <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp" alt="avatar" class="" width="45">
+                </center>
+  </div>
+  </body>
+  </html>
